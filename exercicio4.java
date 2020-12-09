@@ -18,3 +18,28 @@ public class Exercicio9 {
             System.out.println("Error. O número introducido non é válido. Probe con outro");
             n = sc.nextInt();
         }
+
+	System.out.println("");
+
+        for (int i = 0; i < n / 2; i++) {
+            System.out.print(" ");
+        }
+        System.out.println("*");
+
+        blanco = n / 2 - 1;
+        punto = 1;
+        for (int i = 0; i < n / 2 - 1; i++) {
+            for (int j = 0; j < blanco; j++) {
+                System.out.print(" ");
+
+            }
+            System.out.print("*");
+            for (int j = 0; j < punto; j++) {
+                System.out.print(".");
+            }
+            System.out.println("*");
+            blanco--;
+            punto = punto + 2;
+        }
+
+

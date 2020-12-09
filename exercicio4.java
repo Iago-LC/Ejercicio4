@@ -42,4 +42,34 @@ public class Exercicio9 {
             punto = punto + 2;
         }
 
+	System.out.print("*"); 
+        for (int i = 0; i < n - 2; i++) {
+            System.out.print(".");
+        }
+        System.out.println("*");
+
+        blanco = 1;
+        punto = n - 4;
+        for (int i = 0; i < n / 2 - 1; i++) {
+            for (int j = 0; j < blanco; j++) {
+                System.out.print(" ");
+
+            }
+            System.out.print("*");
+            for (int j = 0; j < punto; j++) {
+                System.out.print(".");
+            }
+            System.out.println("*");
+            blanco++;
+            punto = punto - 2;
+        }
+
+        for (int i = 0; i < n / 2; i++) {
+            System.out.print(" ");
+        }
+        System.out.println("*");
+
+    }
+
+}
 
